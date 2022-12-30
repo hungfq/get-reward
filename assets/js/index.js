@@ -16,8 +16,8 @@ const handleMouseOver = () => {
   const width = document.documentElement.clientWidth;
   const height = document.documentElement.clientHeight;
   
-  // img.style.left = getRandom(0, width - 300) + 'px'; // 👈🏼 Horizontally
-  // img.style.top = getRandom(0, height - 300) + 'px'; // 👈🏼 Vertically
+  img.style.left = getRandom(0, width - 300) + 'px'; // 👈🏼 Horizontally
+  img.style.top = getRandom(0, height - 300) + 'px'; // 👈🏼 Vertically
 }
 
 const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
