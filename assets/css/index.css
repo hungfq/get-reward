@@ -60,17 +60,33 @@ div.tilt-n-move-shaking {
 
 body {
     /* background-repeat:no-repeat; */
-    background-image: url('../img/bg.png');
+    background-image: url("../img/bg.png");
     background-size: cover;
 }
 
 @media screen and (max-width: 800px) {
     body {
-        background-image: url('../img/bg2.png');
+        background-image: url("../img/bg2.png");
         background-size: cover;
     }
 }
 
 #info {
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Exo 2", sans-serif;
+}
+
+#blink {
+    animation: blink 0.5s ease-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
