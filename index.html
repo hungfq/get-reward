@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./assets/js/tailwind.js"></script>
     <script>
@@ -18,14 +21,14 @@
             }
         }
     </script>
-    <script src="./assets/js/index.js"></script>
+
     <title>NHẬN QUÀ ĐÊ</title>
 </head>
 
-<body background="./assets/img/christmas_bg.png">
+<body>
     <div id="gift" class="tilt-n-move-shaking">
-        <img ondragstart="return false" oncontextmenu="return false;" src="./assets/img/gift2.png" alt="gift"
-            width="200px" onclick="handleClick()" onmouseover="handleMouseOver()">
+        <img ondragstart="return false" oncontextmenu="return false;" src="./assets/img/red_envelope.png" alt="gift"
+            width="300px" onclick="handleClick()" onmouseover="handleMouseOver()">
     </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -34,12 +37,13 @@
         <div class="modal-content">
             <span onclick="spanClick()" class="close">&times;</span>
             <div id="modalImg">
-                <h2 class="text-3xl font-bold text-red-400">Bạn nhận được 1 BÚA dô đầu</h2>
+                <h2 id="info" class="uppercase text-3xl font-bold text-red-400">Bạn nhận được 1 BÚA dô đầu</h2>
                 <img src="./assets/img/hammer.gif">
             </div>
         </div>
 
     </div>
 </body>
+<script src="./assets/js/index.js"></script>
 
 </html>
