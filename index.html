@@ -5,18 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB BÚA DÔ ĐẦU</title>
-</head>
-
-<body>
-    <button onclick="handleClick()">NHẤN ĐỂ BÚA DÔ ĐẦU NHỎ BÁNH BÈO NÀY</button>
-    <img src="./assets/img/lanh.jpg" width="500px">
-
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/tailwind.js"></script>
     <script>
-        const handleClick = (s) => {
-            window.alert('BÙM BÙM')
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
     </script>
+    <script src="./assets/js/index.js"></script>
+    <title>NHẬN QUÀ ĐÊ</title>
+</head>
+
+<body background="./assets/img/christmas_bg.png">
+    <div id="gift" class="tilt-n-move-shaking">
+        <img ondragstart="return false" oncontextmenu="return false;" src="./assets/img/gift2.png" alt="gift"
+            width="200px" onclick="handleClick()" onmouseover="handleMouseOver()">
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span onclick="spanClick()" class="close">&times;</span>
+            <div id="modalImg">
+                <img src="./assets/img/thor3.png">
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
