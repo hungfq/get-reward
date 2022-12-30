@@ -64,11 +64,24 @@ body {
     background-size: cover;
 }
 
+#giftImg{
+    width: 300px;
+}
+
 @media screen and (max-width: 800px) {
     body {
         background-image: url("../img/bg2.png");
         background-size: cover;
     }
+
+    #giftImg{
+        width: 200px;
+    }
+
+    #myModal {
+        top: 150px;
+    }
+    
 }
 
 #info {

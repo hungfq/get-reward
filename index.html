@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./assets/js/tailwind.js"></script>
+    <link rel="icon" href="./assets/img/red_envelope2.png">
     <script>
         tailwind.config = {
             theme: {
@@ -22,14 +23,14 @@
         }
     </script>
 
-    <title>NHẬN QUÀ ĐÊ</title>
+    <title>Lì xì đầu năm nè</title>
 </head>
 
 <body>
     <div id="blink" class="text-pink-700 font-bold text-3xl text-center bg-white">NHẤN DÔ CON MÈO ĐỂ NHẬN QUÀ</div>
     <div id="gift" class="tilt-n-move-shaking">
-        <img ondragstart="return false" oncontextmenu="return false;" src="./assets/img/red_envelope.png" alt="gift"
-            width="300px" onclick="handleClick()" onmouseover="handleMouseOver()">
+        <img id="giftImg" ondragstart="return false" oncontextmenu="return false;" src="./assets/img/red_envelope.png"
+            alt="gift" onclick="handleClick()" onmouseover="handleMouseOver()">
     </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -38,12 +39,17 @@
         <div class="modal-content">
             <span onclick="spanClick()" class="close">&times;</span>
             <div id="modalImg">
-                <h2 id="info" class="uppercase text-3xl font-bold text-red-400">Bạn nhận được 1 BÚA dô đầu</h2>
+                <h2 id="info" class="text-center uppercase text-3xl font-bold text-red-400">Bạn nhận được 1 BÚA lên đầu
+                </h2>
                 <img src="./assets/img/hammer.gif">
             </div>
         </div>
 
     </div>
+    <!-- <iframe src="./assets/audio/music1.mp3" allow="autoplay" hidden></iframe> -->
+    <audio autoplay>
+        <source src="./assets/audio/music1.mp3" type="audio/mp3">
+    </audio>
 </body>
 <script src="./assets/js/index.js"></script>
 
